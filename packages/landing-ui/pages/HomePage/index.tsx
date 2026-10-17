@@ -1,0 +1,12 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import type { SiteConfig } from '../../types';
+import { Cta } from '../../components/Cta';
+import { Gallery } from '../../components/Gallery';
+import { Icon } from '../../components/Icon';
+import { SectionHeading } from '../../components/SectionHeading';
+import { SiteShell } from '../../components/SiteShell';
+import { StayCard } from '../../components/StayCard';
+import { EditorialHomePage } from '../EditorialHomePage';
+import styles from './styles.module.scss';
+export function HomePage({config}:{config:SiteConfig}){if(config.layout==='editorial')return <EditorialHomePage config={config}/>;return <SiteShell config={config}><section className={styles.hero}><Image src={config.hero.image} alt="Hospedagem em destaque" fill priority sizes="100vw"/><div className={styles.overlay}/><div className={`container ${styles.content}`}><p className="eyebrow">{config.eyebrow}</p><h1>{config.hero.title} <em>{config.hero.highlight}</em></h1><p className={styles.copy}>{config.hero.text}</p><div className={styles.actions}><Link className="button button-accent" href="/hoteis">Conheça nossos destinos <Icon name="arrow"/></Link><a className="button button-ghost" href={`https://wa.me/${config.contact.whatsapp}`} target="_blank" rel="noopener noreferrer">Atendimento</a></div><p className={styles.note}>{config.hero.note}</p></div></section><section className={styles.intro}><div className={`container ${styles.split}`}><div><p className="eyebrow eyebrow-dark">Nossa essência</p><h2>Viajar bem começa com <em>acolhimento.</em></h2></div><div><p>{config.about.intro}</p><Link href="/quem-somos" className="text-link">Conheça nossa história <Icon name="arrow"/></Link></div></div></section><section className={styles.features}><div className={`container ${styles.featureGrid}`}>{config.features.map(f=><article key={f.number}><span>{f.number}</span><h3>{f.title}</h3><p>{f.text}</p></article>)}</div></section><section className={styles.stays}><div className="container"><SectionHeading eyebrow="Destinos" title="Lugares para criar novas memórias." text="Conheça algumas das opções apresentadas pelo clube e consulte a disponibilidade diretamente com a equipe."/><div className={styles.stayGrid}>{config.stays.slice(0,3).map(stay=><StayCard key={stay.name} stay={stay}/>)}</div><div className={styles.center}><Link href="/hoteis" className="button button-primary">Ver todas as opções <Icon name="arrow"/></Link></div></div></section><Gallery images={config.gallery}/><Cta config={config}/></SiteShell>}

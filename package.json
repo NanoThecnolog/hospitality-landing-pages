@@ -1,0 +1,17 @@
+{
+  "name": "hospitality-landing-pages",
+  "private": true,
+  "packageManager": "yarn@1.22.22",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:igloo": "yarn workspace @sites/igloo dev",
+    "dev:pargos": "yarn workspace @sites/pargos dev",
+    "build": "yarn build:igloo && yarn build:pargos",
+    "build:igloo": "yarn workspace @sites/igloo build",
+    "build:pargos": "yarn workspace @sites/pargos build",
+    "typecheck": "yarn workspace @sites/landing-ui typecheck && yarn workspace @sites/igloo typecheck && yarn workspace @sites/pargos typecheck"
+  }
+}

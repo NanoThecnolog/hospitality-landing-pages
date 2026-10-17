@@ -1,0 +1,4 @@
+.section { padding: 85px 0; background: var(--primary-dark); color: #fff; }
+.inner { display: flex; justify-content: space-between; align-items: center; gap: 40px; h2 { margin: 0; font-family: 'Manrope',sans-serif; font-size: 46px; font-weight: 500; letter-spacing: -.045em; line-height: 1.05; } > div > p:last-child { margin: 14px 0 0; color: #ffffffb0; } }
+.editorial { background: var(--accent); color: var(--primary-dark); :global(.eyebrow), .inner > div > p:last-child { color: var(--primary-dark); } :global(.button) { background: var(--primary-dark); color: #fff; } }
+@media(max-width:620px){.inner{align-items:flex-start;flex-direction:column}}

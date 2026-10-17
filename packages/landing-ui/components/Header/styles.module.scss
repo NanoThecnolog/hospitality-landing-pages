@@ -1,0 +1,11 @@
+.header { position: absolute; inset: 0 0 auto; z-index: 20; color: #fff; border-bottom: 1px solid #ffffff2b; }
+.inner { width: min(1240px, calc(100% - 40px)); height: 92px; margin: auto; display: flex; align-items: center; justify-content: space-between; }
+.brand { display: flex; align-items: center; gap: 13px; strong, small { display: block; } strong { font-family: 'Manrope', sans-serif; font-weight: 600; } small { margin-top: 4px; color: #ffffffb8; font-size: 9px; letter-spacing: .2em; text-transform: uppercase; } }
+.mark { width: 48px; height: 48px; display: grid; place-items: center; border: 1px solid color-mix(in srgb, var(--accent), transparent 20%); border-radius: 50%; color: var(--accent); font-family: 'Playfair Display', serif; font-size: 18px; }
+.logo { object-fit: contain; border-radius: 8px; }
+.nav { display: flex; align-items: center; gap: 28px; font-size: 13px; > a:not(.cta) { color: #ffffffd9; } > a:hover { color: var(--accent); } }
+.cta { padding: 12px 18px; border: 1px solid #ffffff70; border-radius: 999px; }
+.menu { display: none; padding: 8px; border: 0; background: none; color: #fff; }
+.editorial { border: 0; background: linear-gradient(180deg, #052b31d9, transparent); .logo { width: 54px; height: 54px; padding: 5px; border-radius: 50%; background: #fff; } }
+@media(max-width:900px) { .nav { position: absolute; top: 82px; right: 20px; left: 20px; display: none; flex-direction: column; align-items: stretch; padding: 24px; border-radius: 8px; background: var(--primary-dark); &.open { display: flex; } } .menu { display: block; } }
+@media(max-width:620px) { .inner { width: min(100% - 28px, 1240px); } .brand { strong { font-size: 14px; } small { display: none; } } .mark { width: 40px; height: 40px; } }

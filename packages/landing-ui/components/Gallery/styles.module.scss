@@ -1,0 +1,4 @@
+.gallery { display: grid; grid-template-columns: 1.4fr .8fr .8fr; grid-template-rows: 260px 260px; gap: 7px; background: #fff; > div { position: relative; overflow: hidden; &:hover img { transform: scale(1.04); } } img { object-fit: cover; transition: transform .6s; } }
+.item1 { grid-row: span 2; }.item2 { grid-column: span 2; }
+@media(max-width:900px){.gallery{grid-template-columns:1fr 1fr;grid-template-rows:240px 240px}.item1{grid-row:auto}.item2{grid-column:auto}.item5{display:none}}
+@media(max-width:620px){.gallery{grid-template-columns:1fr;grid-template-rows:repeat(3,260px)}.gallery>div:nth-child(n+4){display:none}}

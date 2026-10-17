@@ -1,0 +1,30 @@
+{
+  "name": "@sites/landing-ui",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.ts",
+  "types": "index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "exports": {
+    ".": {
+      "types": "./index.ts",
+      "default": "./index.ts"
+    },
+    "./pages/*": {
+      "types": "./pages/*/index.tsx",
+      "default": "./pages/*/index.tsx"
+    },
+    "./styles/global.scss": "./styles/global.scss"
+  },
+  "dependencies": {
+    "react-icons": "5.7.0",
+    "sass": "1.105.1"
+  },
+  "peerDependencies": {
+    "next": "^15.5.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
