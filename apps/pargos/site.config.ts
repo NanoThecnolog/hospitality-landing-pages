@@ -1,14 +1,139 @@
-import type { SiteConfig } from '@sites/landing-ui';
+import type { SiteConfig } from "@sites/landing-ui";
 export const siteConfig: SiteConfig = {
-  layout:'editorial',
-  brand:'Pargos Club do Brasil',shortBrand:'PC',eyebrow:'Clube de férias desde 1977',description:'Experiências de viagem e hospedagem para associados Pargos Club do Brasil.',logo:'/images/logo.png',
-  colors:{primary:'#0b645c',primaryDark:'#062f35',accent:'#d7ad58',paper:'#f2f1eb',ink:'#14272b',muted:'#667577'},
-  hero:{title:'O Brasil como destino.',highlight:'Você como prioridade.',text:'Uma nova forma de apresentar destinos, cuidar do relacionamento e tornar cada experiência de viagem mais simples.',image:'/images/hero.jpg',note:'Reservas, valores e benefícios dependem de disponibilidade e confirmação direta com a equipe do clube.'},
-  nav:[{label:'Início',href:'/'},{label:'Quem somos',href:'/quem-somos'},{label:'Comunicado',href:'/comunicado'},{label:'Hotéis',href:'/hoteis'},{label:'Contato',href:'/contato'}],
-  contact:{phone:'+552141114866',phoneDisplay:'(21) 4111-4866',whatsapp:'5521959519798',whatsappDisplay:'(21) 95951-9798',hours:'Segunda a sexta, das 9h às 17h',address:'Avenida Treze de Maio, 33 — salas 2309/2310 — Centro, Rio de Janeiro/RJ'},
-  about:{title:'Uma história brasileira movida por viagens.',intro:'Desde 1977, um clube criado para facilitar a hospedagem e ampliar as possibilidades de viagem.',paragraphs:['A Pargos Club do Brasil existe há mais de 30 anos e consolidou sua trajetória por meio de parcerias com diferentes segmentos do mercado. O clube apresenta uma proposta voltada à experiência de férias e ao relacionamento com seus associados.','A Pargos busca eliminar etapas desnecessárias da hospedagem e simplificar o planejamento de cada viagem, mantendo o associado no centro da experiência.'],image:'/images/about.jpg',facts:[{value:'1977',label:'ano informado de início da história'},{value:'5',label:'destinos apresentados no site atual'},{value:'Brasil',label:'experiências de norte a sul'}]},
-  features:[{number:'01',title:'Conveniência',text:'Um caminho mais simples entre o associado, o atendimento e sua próxima hospedagem.'},{number:'02',title:'Qualidade',text:'Acomodações e serviços apresentados para tornar a viagem mais tranquila.'},{number:'03',title:'Localização',text:'Destinos em diferentes regiões do Brasil para combinar descanso e descoberta.'}],
-  stays:[{name:'Pousada Cabo Frio',location:'Cabo Frio, Rio de Janeiro',description:'Quartos para casais e famílias, frigobar, TV e piscina, próxima às praias da Costa do Sol.',image:'/images/cabo-frio.jpg',price:'R$ 200'},{name:'Pousada Itaúnas',location:'Itaúnas, Espírito Santo',description:'Uma opção de hospedagem para descobrir a atmosfera singular do litoral capixaba.',image:'/images/itaunas.jpg',price:'R$ 190'},{name:'Fortaleza',location:'Fortaleza, Ceará',description:'Próxima à praia, com internet, café da manhã, piscina e estacionamento informados pelo clube.',image:'/images/fortaleza.jpg',price:'R$ 220'},{name:'Hotel Natal',location:'Muriú, Rio Grande do Norte',description:'Hospedagem apresentada na Avenida Porto Mirim, em Muriú, no litoral potiguar.',image:'/images/natal.jpg',price:'R$ 230'},{name:'Caldas Novas',location:'Caldas Novas, Goiás',description:'Uma opção para aproveitar um dos destinos termais mais conhecidos do Brasil.',image:'/images/caldas-novas.jpg',price:'R$ 150'},{name:'Salinas Pará',location:'Belém, Pará',description:'Hospedagem apresentada na Avenida Conselheiro Furtado, no bairro da Cremação.',image:'/images/salinas.jpg',price:'R$ 120'}],
-  gallery:['/images/gallery-1.jpg','/images/gallery-2.jpg','/images/gallery-3.jpg','/images/gallery-4.jpg','/images/gallery-5.jpg'],videoId:'VBlP_LC8uHk',
-  notice:{title:'Uma nova fase está sendo preparada.',paragraphs:['A diretoria do Pargos Clube do Brasil comunica a seus associados em todo o país que, neste momento, o clube está fechado e não realiza atendimento presencial. A instituição está em processo de reestruturação para um breve retorno das atividades, principalmente na área de reservas e hospedagem.'],important:'Aos sócios proprietários com diárias acumuladas, o comunicado original informa a possibilidade de negociação por meio de conversão em ações sobre o patrimônio, relacionada a tratativas com uma empresa investidora. Entre em contato com a equipe para receber informações oficiais e atualizadas antes de qualquer decisão.'}
+  layout: "editorial",
+  brand: "Pargos Club do Brasil",
+  shortBrand: "PC",
+  eyebrow: "Clube de férias desde 1977",
+  description:
+    "Experiências de viagem e hospedagem para associados Pargos Club do Brasil.",
+  logo: "/images/logo.png",
+  colors: {
+    primary: "#0b645c",
+    primaryDark: "#062f35",
+    accent: "#d7ad58",
+    paper: "#f2f1eb",
+    ink: "#14272b",
+    muted: "#667577",
+  },
+  hero: {
+    title: "O Brasil como destino.",
+    highlight: "Você como prioridade.",
+    text: "Uma nova forma de apresentar destinos, cuidar do relacionamento e tornar cada experiência de viagem mais simples.",
+    image: "/images/hero.jpg",
+    note: "Reservas, valores e benefícios dependem de disponibilidade e confirmação direta com a equipe do clube.",
+  },
+  nav: [
+    { label: "Início", href: "/" },
+    { label: "Quem somos", href: "/quem-somos" },
+    { label: "Comunicado", href: "/comunicado" },
+    { label: "Hotéis", href: "/hoteis" },
+    { label: "Contato", href: "/contato" },
+  ],
+  contact: {
+    phone: "+5511944905464",
+    phoneDisplay: "(11) 94490-5464",
+    whatsapp: "5508000004744",
+    whatsappDisplay: "0800 000-4744",
+    hours: "Segunda a sexta, das 9h às 17h",
+    address:
+      "Avenida Treze de Maio, 33 — salas 2309/2310 — Centro, Rio de Janeiro/RJ",
+  },
+  about: {
+    title: "Uma história brasileira movida por viagens.",
+    intro:
+      "Desde 1977, um clube criado para facilitar a hospedagem e ampliar as possibilidades de viagem.",
+    paragraphs: [
+      "A Pargos Club do Brasil existe há mais de 30 anos e consolidou sua trajetória por meio de parcerias com diferentes segmentos do mercado. O clube apresenta uma proposta voltada à experiência de férias e ao relacionamento com seus associados.",
+      "A Pargos busca eliminar etapas desnecessárias da hospedagem e simplificar o planejamento de cada viagem, mantendo o associado no centro da experiência.",
+    ],
+    image: "/images/about.jpg",
+    facts: [
+      { value: "1977", label: "ano informado de início da história" },
+      { value: "5", label: "destinos apresentados no site atual" },
+      { value: "Brasil", label: "experiências de norte a sul" },
+    ],
+  },
+  features: [
+    {
+      number: "01",
+      title: "Conveniência",
+      text: "Um caminho mais simples entre o associado, o atendimento e sua próxima hospedagem.",
+    },
+    {
+      number: "02",
+      title: "Qualidade",
+      text: "Acomodações e serviços apresentados para tornar a viagem mais tranquila.",
+    },
+    {
+      number: "03",
+      title: "Localização",
+      text: "Destinos em diferentes regiões do Brasil para combinar descanso e descoberta.",
+    },
+  ],
+  stays: [
+    {
+      name: "Pousada Cabo Frio",
+      location: "Cabo Frio, Rio de Janeiro",
+      description:
+        "Quartos para casais e famílias, frigobar, TV e piscina, próxima às praias da Costa do Sol.",
+      image: "/images/cabo-frio.jpg",
+      price: "R$ 200",
+    },
+    {
+      name: "Pousada Itaúnas",
+      location: "Itaúnas, Espírito Santo",
+      description:
+        "Uma opção de hospedagem para descobrir a atmosfera singular do litoral capixaba.",
+      image: "/images/itaunas.jpg",
+      price: "R$ 190",
+    },
+    {
+      name: "Fortaleza",
+      location: "Fortaleza, Ceará",
+      description:
+        "Próxima à praia, com internet, café da manhã, piscina e estacionamento informados pelo clube.",
+      image: "/images/fortaleza.jpg",
+      price: "R$ 220",
+    },
+    {
+      name: "Hotel Natal",
+      location: "Muriú, Rio Grande do Norte",
+      description:
+        "Hospedagem apresentada na Avenida Porto Mirim, em Muriú, no litoral potiguar.",
+      image: "/images/natal.jpg",
+      price: "R$ 230",
+    },
+    {
+      name: "Caldas Novas",
+      location: "Caldas Novas, Goiás",
+      description:
+        "Uma opção para aproveitar um dos destinos termais mais conhecidos do Brasil.",
+      image: "/images/caldas-novas.jpg",
+      price: "R$ 150",
+    },
+    {
+      name: "Salinas Pará",
+      location: "Belém, Pará",
+      description:
+        "Hospedagem apresentada na Avenida Conselheiro Furtado, no bairro da Cremação.",
+      image: "/images/salinas.jpg",
+      price: "R$ 120",
+    },
+  ],
+  gallery: [
+    "/images/gallery-1.jpg",
+    "/images/gallery-2.jpg",
+    "/images/gallery-3.jpg",
+    "/images/gallery-4.jpg",
+    "/images/gallery-5.jpg",
+  ],
+  videoId: "VBlP_LC8uHk",
+  notice: {
+    title: "Uma nova fase está sendo preparada.",
+    paragraphs: [
+      "A diretoria do Pargos Clube do Brasil comunica a seus associados em todo o país que, neste momento, o clube está fechado e não realiza atendimento presencial. A instituição está em processo de reestruturação para um breve retorno das atividades, principalmente na área de reservas e hospedagem.",
+    ],
+    important:
+      "Aos sócios proprietários com diárias acumuladas, o comunicado original informa a possibilidade de negociação por meio de conversão em ações sobre o patrimônio, relacionada a tratativas com uma empresa investidora. Entre em contato com a equipe para receber informações oficiais e atualizadas antes de qualquer decisão.",
+  },
 };
