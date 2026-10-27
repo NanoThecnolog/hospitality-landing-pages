@@ -32,6 +32,7 @@ export const siteConfig: SiteConfig = {
     phoneDisplay: "(31) 99977-7153",
     whatsapp: "5531999777153",
     whatsappDisplay: "",
+    email: "contato@iglooin.com.br",
     hours: "Segunda a sexta, das 9h às 17h",
     address:
       "Avenida Treze de Maio, 33 — Bloco A, sala 2109 — Centro, Rio de Janeiro/RJ — CEP 20031-007",

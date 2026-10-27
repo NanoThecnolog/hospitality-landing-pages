@@ -34,6 +34,7 @@ export const siteConfig: SiteConfig = {
     phoneDisplay: "(11) 94490-5464",
     whatsapp: "5508000004744",
     whatsappDisplay: "0800 000-4744",
+    email: "contato@tourpargosclube.com.br",
     hours: "Segunda a sexta, das 9h às 17h",
     address:
       "Avenida Treze de Maio, 33 — salas 2309/2310 — Centro, Rio de Janeiro/RJ",

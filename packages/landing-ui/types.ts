@@ -12,7 +12,7 @@ export type SiteConfig = {
   logo?: string;
   hero: { title: string; highlight: string; text: string; image: string; note: string };
   nav: LinkItem[];
-  contact: { phone: string; phoneDisplay: string; whatsapp: string; whatsappDisplay: string; hours: string; address: string; cnpj?: string };
+  contact: { phone: string; phoneDisplay: string; whatsapp: string; whatsappDisplay: string; email: string; hours: string; address: string; cnpj?: string };
   about: { title: string; intro: string; paragraphs: string[]; image: string; facts: { value: string; label: string }[] };
   features: Feature[];
   stays: Stay[];
