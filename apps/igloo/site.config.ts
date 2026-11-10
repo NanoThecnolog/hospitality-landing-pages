@@ -31,7 +31,7 @@ export const siteConfig: SiteConfig = {
     phone: "+5511944905464",
     phoneDisplay: "(11) 94490-5464",
     whatsapp: "5511944905464",
-    whatsappDisplay: "(11) 94490-5464",
+    whatsappDisplay: "",
     email: "contato@iglooin.com.br",
     hours: "Segunda a sexta, das 9h às 17h",
     address:
