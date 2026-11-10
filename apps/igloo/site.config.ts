@@ -28,10 +28,10 @@ export const siteConfig: SiteConfig = {
     { label: "Contato", href: "/contato" },
   ],
   contact: {
-    phone: "+5531999777153",
-    phoneDisplay: "(31) 99977-7153",
-    whatsapp: "5531999777153",
-    whatsappDisplay: "",
+    phone: "+5511944905464",
+    phoneDisplay: "(11) 94490-5464",
+    whatsapp: "5511944905464",
+    whatsappDisplay: "(11) 94490-5464",
     email: "contato@iglooin.com.br",
     hours: "Segunda a sexta, das 9h às 17h",
     address:
